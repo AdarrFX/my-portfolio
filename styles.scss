@@ -1,0 +1,79 @@
+@import "./partials/setup";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    // background: linear-gradient(to bottom, rgba(38,43,71,1) 0%,rgba(30,87,153,1) 100%);    overflow: hidden;
+    border: 2px solid red;
+}
+
+.name-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.name-container h1 {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 55px;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    width: 70%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) skew(-25deg);
+    background: rgb(255, 39, 39);
+    
+}
+
+.navbar-navlist {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.navbar-navlist .navitem {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    transform: skew(25deg);
+    padding: 0 1% 0 1%;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+//ABOUT SECTION
+
+.about {
+    height: 600px;
+    border: 2px solid red;
+    display: flex;
+}
+
+.about-box {
+    
+}
+
+.skills img {
+    width: 120px;
+}
