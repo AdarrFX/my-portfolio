@@ -180,14 +180,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 125%;
+}
+
+.wrapper {
+  max-width: 1600px;
 }
 
 header {
   position: relative;
   height: 100vh;
   border: 2px solid red;
+}
+
+.stroke-text {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .name-container {
@@ -201,7 +209,7 @@ header {
 }
 
 .name-container h1 {
-  font-family: 'Hammersmith One', sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   font-size: 55px;
 }
 
@@ -235,15 +243,123 @@ nav {
           transform: skew(25deg);
   padding: 0 1% 0 1%;
   color: white;
-  text-shadow: -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .about {
   height: 600px;
   border: 2px solid red;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about-content {
+  position: relative;
+  text-align: center;
+}
+
+.about-box-image {
+  width: 40%;
+  margin-left: 5%;
+  background: red;
+}
+
+.about-box-image img {
+  width: 70%;
+  min-width: 300px;
+  float: right;
+}
+
+.about-me-header {
+  text-align: center;
+  padding: 5px;
+  width: 180px;
+  background: #ff2727;
+  height: 50px;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  margin-left: 40px;
+  color: white;
+}
+
+.about-me-header p {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 40px;
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+}
+
+.about-box-text {
+  position: absolute;
+  width: 40%;
+  top: 45%;
+  right: 10%;
+  text-align: left;
+}
+
+.portfolio-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-content p {
+  margin: 0;
+}
+
+.portfolio-work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 50px 0 50px 0;
+  max-width: 750px;
+}
+
+.work-container-info {
+  width: 70%;
+  text-align: center;
+}
+
+.work-container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.work-container-text p {
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+.work-container-viewgit {
+  text-align: center;
+}
+
+.github-icon {
+  width: 40px;
+  margin-top: 5px;
 }
 
 .skills img {

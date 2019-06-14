@@ -1,79 +1,174 @@
-@import "./partials/setup";
+@import "./css/partials/setup";
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 125%;
+  font-family: "Roboto", sans-serif;
+  font-size: 125%;
+}
+
+.wrapper {
+    max-width: 1600px;
 }
 
 header {
-    position: relative;
-    height: 100vh;
-    // background: linear-gradient(to bottom, rgba(38,43,71,1) 0%,rgba(30,87,153,1) 100%);    overflow: hidden;
-    border: 2px solid red;
+  position: relative;
+  height: 100vh;
+  // background: linear-gradient(to bottom, rgba(38,43,71,1) 0%,rgba(30,87,153,1) 100%);    overflow: hidden;
+  border: 2px solid red;
+}
+
+.stroke-text {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .name-container {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    text-align: center;
-    margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  margin: 0 auto;
 }
 
 .name-container h1 {
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 55px;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 55px;
 }
 
 nav {
-    width: 100%;
+  width: 100%;
 }
 
 .navbar {
-    width: 70%;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) skew(-25deg);
-    background: rgb(255, 39, 39);
-    
+  width: 70%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) skew(-25deg);
+  background: rgb(255, 39, 39);
 }
 
 .navbar-navlist {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .navbar-navlist .navitem {
-    display: inline-block;
-    height: 60px;
-    line-height: 60px;
-    transform: skew(25deg);
-    padding: 0 1% 0 1%;
-    color: white;
-    text-shadow:
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  transform: skew(25deg);
+  padding: 0 1% 0 1%;
+  color: white;
 }
 
 //ABOUT SECTION
 
 .about {
-    height: 600px;
-    border: 2px solid red;
-    display: flex;
+  height: 600px;
+  border: 2px solid red;
+  // display: flex;
+  // flex-direction: column;
 }
 
-.about-box {
-    
+.about img {
+  width: 100%;
 }
+
+.about-content {
+    position: relative;
+    text-align: center;
+}
+
+.about-box-image {
+  width: 40%;
+  margin-left: 5%;
+  background: red;  
+}
+
+.about-box-image img {
+    width: 70%;
+    min-width: 300px;
+    float: right;
+}
+
+.about-me-header {
+  text-align: center;
+  padding: 5px;
+  width: 180px;
+  background: rgb(255, 39, 39);
+  height: 50px;
+  transform: skew(-25deg);
+  margin-left: 40px;
+  color: white;
+}
+
+.about-me-header p {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 40px;
+  transform: skew(25deg);
+}
+
+.about-box-text {
+    position: absolute;
+    width: 40%;
+    top: 45%;
+    right: 10%;
+    text-align: left;
+}
+
+// PORTFOLIO SECTION
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-content p {
+    margin: 0;
+}
+
+.portfolio-work-container {
+    display: flex;
+    width: 70%;
+    margin: 50px 0 50px 0;
+    max-width: 750px;
+}
+
+.work-container-info{
+    width: 70%;
+    text-align: center;
+}
+
+.work-container-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.work-container-text p {
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.work-container-viewgit {
+    text-align: center;
+}
+
+.github-icon {
+    width: 40px;
+    margin-top: 5px;
+}
+
+
 
 .skills img {
-    width: 120px;
+  width: 120px;
 }
