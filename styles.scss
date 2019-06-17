@@ -1,11 +1,17 @@
 @import "./css/partials/setup";
 $base-colour: #0071EB;
+$darker-base: rgb(0, 95, 196);
 
 //SHARED STYLES
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: 125%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 
 .wrapper {
@@ -105,10 +111,14 @@ nav {
 .navbar-navlink {
     text-decoration: none;
     color: white;
+    padding: 20px 0 20px 0;
 }
 
 .navbar-navlink:hover {
     text-decoration: none;
+    background: $base-colour;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.25);
+    transition: 0.3s;
     color: orange;
 }
 
@@ -164,6 +174,8 @@ nav {
   transform: skew(-25deg);
   margin-left: 40px;
   color: white;
+  border-left: 10px solid rgb(255, 145, 0);
+  border-top: 5px solid rgb(255, 145, 0);
   box-shadow: 8px 8px 10px 0px rgba(0,0,0,0.25);
 }
 
@@ -253,10 +265,20 @@ nav {
 
 .skills {
     text-align: center;
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+.skills-content {
+    background-color: $base-colour;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
 }
 
 .skills img {
   width: 120px;
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.808));
 }
 
 .skills-text {
@@ -330,6 +352,8 @@ nav {
     line-height: 60px;
     transform: skew(-25deg);
     color: white;
+    border-left: 10px solid rgb(255, 145, 0);
+    border-top: 5px solid rgb(255, 145, 0);
     margin-left: 70px;
 }
 
@@ -348,9 +372,27 @@ nav {
 
 //CONTACT SECTION
 
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+    background: $base-colour;
+    color: white;
+}
+
 .contact-content {
     margin: 0 auto;
     text-align: center;
+}
+
+.contact h4 {
+    font-size: 1.6rem;
+}
+
+.contact i {
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
 }
 
 .contact-icons-list {
@@ -365,7 +407,7 @@ nav {
 
 .contact-icons-list a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 //FOOTER BAR
