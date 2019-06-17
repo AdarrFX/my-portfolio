@@ -278,6 +278,7 @@ nav {
   width: 40%;
   margin-left: 5%;
   background: #0071EB;
+  max-height: 400px;
 }
 
 .about-box-image img {
