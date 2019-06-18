@@ -202,7 +202,22 @@ header {
   position: relative;
   height: 100vh;
   min-height: 450px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#1e4066));
+  background: linear-gradient(to bottom, black 0%, #1e4066 100%);
   overflow: hidden;
+  background-attachment: fixed;
+}
+
+header:after {
+  content: "";
+  background: url("/img/astrobg.jpg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-attachment: fixed;
 }
 
 .globe-image-bg {
@@ -210,25 +225,30 @@ header {
   position: absolute;
   top: calc(100vh - 40vh);
   left: calc(100vw - 180vw);
-  opacity: 0.5;
-  filter: drop-shadow(0px 0px 100px 50px rgba(60, 177, 255, 0.603));
-  -webkit-filter: drop-shadow(0px 0px 100px rgba(60, 177, 255, 0.603));
-  -moz-filter: drop-shadow(0px 0px 100px rgba(60, 177, 255, 0.603));
+  z-index: 1;
+  -webkit-filter: brightness(70%) contrast(140%) drop-shadow(15px -15px 22px #7bceff);
+          filter: brightness(70%) contrast(140%) drop-shadow(15px -15px 22px #7bceff);
 }
 
 .name-container {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -40%);
-          transform: translate(-50%, -40%);
-  text-align: center;
+  top: 35%;
+  left: 40%;
+  -webkit-transform: translate(-40%, -35%);
+          transform: translate(-40%, -35%);
+  text-align: left;
   margin: 0 auto;
+  color: white;
+  z-index: 2;
 }
 
 .name-container h1 {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 55px;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 4.5rem;
+}
+
+.name-container h2 {
+  font-size: 2.5rem;
 }
 
 nav {
@@ -244,7 +264,9 @@ nav {
   left: 50%;
   -webkit-transform: translateX(-50%) skew(-25deg);
           transform: translateX(-50%) skew(-25deg);
-  background: #0071EB;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0071EB), to(#005fc4));
+  background: linear-gradient(to bottom, #0071EB 0%, #005fc4 100%);
+  z-index: 3;
 }
 
 .navbar-stickied {
@@ -286,17 +308,14 @@ nav {
 .navbar-navlink {
   text-decoration: none;
   color: white;
-  padding: 20px 0 20px 0;
+  padding: 16px 0 16px 0;
 }
 
 .navbar-navlink:hover {
-  text-decoration: none;
-  background: #0071EB;
-  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: orange;
+  color: #ff9100;
 }
 
 .about {
@@ -436,6 +455,8 @@ nav {
   -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
   -moz-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
   max-width: 450px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .work-container-info {
@@ -461,6 +482,15 @@ nav {
   width: 30%;
 }
 
+.portfolio-image-link:hover .portfolio-work-container-image {
+  -webkit-filter: drop-shadow(0px 0px 10px #ff9100);
+          filter: drop-shadow(0px 0px 10px #ff9100);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .work-container-text p {
   padding: 5px;
   font-size: 0.9em;
@@ -470,9 +500,33 @@ nav {
   text-align: center;
 }
 
+.portfolio-github-code-link {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portfolio-github-code-link:hover {
+  color: #005fc4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portfolio-github-code-link:hover .github-icon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .github-icon {
   width: 40px;
   margin-top: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .skills {
@@ -482,7 +536,8 @@ nav {
 }
 
 .skills-content {
-  background-color: #0071EB;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0071EB), to(#005fc4));
+  background: linear-gradient(to bottom, #0071EB 0%, #005fc4 100%);
   width: 100%;
   margin: 0 auto;
   padding: 30px 0 30px 0;
@@ -495,9 +550,6 @@ nav {
 }
 
 .experience {
-  height: 80vh;
-  min-height: 420px;
-  max-height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,6 +569,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
+  margin-bottom: 80px;
 }
 
 .experience-content h4 {
@@ -562,13 +615,15 @@ nav {
   width: 220px;
   background: #0071EB;
   height: 60px;
-  line-height: 60px;
+  line-height: 45px;
   -webkit-transform: skew(-25deg);
           transform: skew(-25deg);
   color: white;
   border-left: 10px solid #ff9100;
   border-top: 5px solid #ff9100;
-  margin-left: 70px;
+  margin-left: 50px;
+  -webkit-box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .slanted-header h3 {
@@ -578,11 +633,15 @@ nav {
 }
 
 .experience-education {
-  width: 40%;
+  width: 50%;
+}
+
+.experience-education p {
+  padding-left: 32px;
 }
 
 .experience-work {
-  width: 40%;
+  width: 50%;
 }
 
 .contact {
@@ -599,7 +658,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #0071EB;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0071EB), to(#005fc4));
+  background: linear-gradient(to bottom, #0071EB 0%, #005fc4 100%);
   color: white;
 }
 
@@ -629,6 +689,14 @@ nav {
 .contact-icons-list a {
   text-decoration: none;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-icons-list a:hover {
+  color: #ff9100;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 footer {
