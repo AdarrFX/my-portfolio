@@ -11,7 +11,7 @@ const main = function () {
     $(window).scroll(updateNav);
 
     // Smooth scrolling example from: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-    
+
     $("a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
@@ -29,7 +29,7 @@ const main = function () {
           }, 800, function(){
     
             // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
+            // window.location.hash = hash;
           });
         } // End if
       });

@@ -218,6 +218,7 @@ header:after {
   right: 0;
   position: absolute;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .globe-image-bg {
@@ -228,6 +229,36 @@ header:after {
   z-index: 1;
   -webkit-filter: brightness(70%) contrast(140%) drop-shadow(15px -15px 22px #7bceff);
           filter: brightness(70%) contrast(140%) drop-shadow(15px -15px 22px #7bceff);
+  -webkit-animation-name: globe-rotation;
+          animation-name: globe-rotation;
+  -webkit-animation-duration: 380s;
+          animation-duration: 380s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes globe-rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes globe-rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
 }
 
 .name-container {
@@ -253,6 +284,52 @@ header:after {
 
 nav {
   width: 100%;
+}
+
+.navbar-responsive {
+  width: 100vw;
+  height: 300px;
+  z-index: 5;
+}
+
+.navbar-navlist-responsive {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-responsive-container {
+  position: fixed;
+  top: 30px;
+  z-index: 2;
+}
+
+.screen-dim {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  background: black;
+  opacity: 0.4;
+  z-index: 3;
+}
+
+.navitem-responsive {
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0071EB), to(#005fc4));
+  background: linear-gradient(to bottom, #0071EB 0%, #005fc4 100%);
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+}
+
+.navitem-responsive a {
+  display: block;
+  -webkit-transform: skew(25deg);
+          transform: skew(25deg);
+  text-decoration: none;
+  color: white;
 }
 
 .navbar {
@@ -364,7 +441,7 @@ nav {
 
 .about-box-image img {
   width: 100%;
-  min-width: 300px;
+  min-width: 250px;
   max-width: 550px;
   -webkit-box-shadow: -8px 12px 10px 0px rgba(0, 0, 0, 0.2);
           box-shadow: -8px 12px 10px 0px rgba(0, 0, 0, 0.2);
@@ -683,6 +760,10 @@ nav {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.email-link-mobile {
+  display: none;
+}
+
 .contact h4 {
   font-size: 1.6rem;
 }
@@ -729,6 +810,9 @@ footer p {
 }
 
 @media (max-width: 950px) {
+  .portfolio {
+    margin-bottom: 10px;
+  }
   .portfolio-work-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -757,9 +841,44 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
+  .about-box-text {
+    width: 80%;
+  }
+  .about-me-header {
+    margin: 30px auto 0 auto;
+  }
 }
 
 @media (max-width: 700px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .name-container h2 {
+    font-size: 6vw;
+  }
+  .about {
+    min-height: 100vh;
+    height: auto;
+  }
+  .about-boxes-container {
+    width: 100%;
+  }
+  .about-box-image {
+    width: 80%;
+  }
+  .portfolio-work-container {
+    width: 100%;
+    font-size: 5vw;
+  }
+  .work-container-info {
+    width: 95%;
+  }
+  .portfolio-work-container-image {
+    width: 100%;
+  }
+  .skills-content img {
+    width: 80px;
+  }
   .experience-education-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -778,6 +897,15 @@ footer p {
   }
   .slanted-header {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .email-link {
+    display: none;
+  }
+  .email-link-mobile {
+    display: initial;
   }
 }
 /*# sourceMappingURL=styles.css.map */
