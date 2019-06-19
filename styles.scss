@@ -8,7 +8,10 @@ $orange-base: rgb(255, 145, 0);
 body {
   font-family: "Raleway", sans-serif;
   font-size: 125%;
-  
+}
+
+body.screen-dim-active {
+    overflow: hidden;
 }
 
 h2 {
@@ -19,6 +22,11 @@ h2 {
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+
+.hidden-element {
+    display: none;
 }
 
 .stroke-text {
@@ -91,11 +99,55 @@ nav {
   width: 100%;
 }
 
+.tasty-burger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+}
+
+.upper-ham-active {
+    transform: rotate(45deg) translateY(18px);
+    transition: 0.3s;
+}
+.lower-ham-active {
+    transform: rotate(-45deg)  translateY(-18px);
+    transition: 0.3s;
+}
+.middle-ham-active {
+    transform: translateX(100vw);
+    transition: 0.3s;
+}
+
+.hambar {
+    height: 5px;
+    background: linear-gradient(to bottom, $base-colour 0%, $darker-base 100%);
+    border: 1px solid white;
+    width: 40px;
+    margin: 8px 0;
+    transition: 0.3s;
+}
+
 .navbar-responsive {
-    // display: none;
+    position: fixed;
+    top: 80px;
+    right: -100vw;
     width: 100vw;
     height: 300px;
     z-index: 5;
+    transition: 0.5s;
+}
+
+.navbar-navlink-responsive {
+    height: 60px;
+    width: 180px;
+}
+
+.navbar-shown {
+    right: 50%;
+    transform: translateX(50%);
+    transition: 0.5s;
 }
 
 .navbar-navlist-responsive {
@@ -106,7 +158,7 @@ nav {
 
 .navbar-responsive-container {
     position: fixed;
-    top: 30px;
+    top: 80px;
     z-index: 2;
 }
 
@@ -115,14 +167,14 @@ nav {
     width: 100vh;
     height: 100vh;
     background: black;
-    opacity: 0.4;
-    z-index: 3;
+    opacity: 0.65;
+    z-index: 2;
 }
 
 .navitem-responsive {
     width: 200px;
-    margin: 10px auto;
-    padding: 10px 20px;
+    height: 45px;
+    margin: 25px auto;
     text-align: center;
     background: linear-gradient(to bottom, $base-colour 0%, $darker-base 100%);
     transform: skew(-25deg);
@@ -130,9 +182,11 @@ nav {
 
 .navitem-responsive a {
     display: block;
+    margin: 0 auto;
     transform: skew(25deg);
     text-decoration: none;
     color: white;
+    line-height: 45px;
 }
 
 .navbar {
@@ -385,6 +439,7 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: space-around;
     width: 90%;
     margin-bottom: 80px;
 }
@@ -397,11 +452,12 @@ nav {
     line-height: 30px;
     background-repeat: no-repeat;
     background-size: 30px auto;
-    padding-left: 32px;
+    padding-left: 40px;
 }
 
 .experience-education ul {
     list-style: none;
+    padding: 10px;
 }
 
 .hackeryou-education-heading {
@@ -452,7 +508,7 @@ nav {
 }
 
 .experience-education p {
-    padding-left: 32px;
+    padding-left: 40px;
 }
 
 .experience-work {
@@ -500,6 +556,8 @@ nav {
 
 .contact i {
     text-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .contact-icons-list {
@@ -589,6 +647,15 @@ footer p {
 
     .name-container h2 {
         font-size: 6vw;
+    }
+
+    .navbar,
+    .navbar-stickied {
+        display: none;
+    }
+
+    .tasty-burger {
+        display: initial;
     }
 
     //About me section
