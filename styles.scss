@@ -84,6 +84,13 @@ header:after {
   margin: 0 auto;
   color: white;
   z-index: 2;
+  h3 {
+    margin: 0;
+    margin-top: -25px;
+    transform: rotate(-5deg);
+    margin-left: 250px;
+    font-size: smaller;
+  }
 }
 
 .name-container h1 {
