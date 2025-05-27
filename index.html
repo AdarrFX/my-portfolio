@@ -25,7 +25,8 @@
                 <p>Hello, I'm</p>
                 <h1>Adam Pachulski</h1>
                 <h2>A Video Game Developer</h2>
-                <h3>(and Front-End Web Developer!)</h3></div>
+                <!-- <h3>(and Front-End Web Developer!)</h3> -->
+            </div>
             <div class="navbar">
                 <nav>
                     <ul class="navbar-navlist">
@@ -45,15 +46,20 @@
                     <div class="lower-ham hambar"></div>
                 </div>
                 <nav class="navbar-responsive">
-                        <ul class="navbar-navlist-responsive">
-                            <li class="navitem-responsive"><a href="#about" class="navbar-navlink-responsive">About Me</a></li>
-                            <li class="navitem-responsive"><a href="#portfolio" class="navbar-navlink-responsive">My Work</a></li>
-                            <li class="navitem-responsive"><a href="#skills" class="navbar-navlink-responsive">Skills</a></li>
-                            <li class="navitem-responsive"><a href="#experience" class="navbar-navlink-responsive">Experience</a></li>
-                            <li class="navitem-responsive"><a href="#contact" class="navbar-navlink-responsive">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                    <ul class="navbar-navlist-responsive">
+                        <li class="navitem-responsive"><a href="#about" class="navbar-navlink-responsive">About Me</a>
+                        </li>
+                        <li class="navitem-responsive"><a href="#portfolio" class="navbar-navlink-responsive">My
+                                Work</a></li>
+                        <li class="navitem-responsive"><a href="#skills" class="navbar-navlink-responsive">Skills</a>
+                        </li>
+                        <li class="navitem-responsive"><a href="#experience"
+                                class="navbar-navlink-responsive">Experience</a></li>
+                        <li class="navitem-responsive"><a href="#contact" class="navbar-navlink-responsive">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <section class="about wrapper" id="about">
             <div class="about-content">
@@ -63,8 +69,11 @@
                         <img src="/img/ap_picture.jpg" alt="">
                     </div>
                     <div class="about-box-text">
-                        <div class=about-me-header><p class="stroke-text">Who am I?</p></div>
-                        <p class="about-me-text">Hello! I'm Adam Pachulski, a front-end web developer with a love of coding and learning. Let's build functional, unique, and attractive websites together!</p>
+                        <div class=about-me-header>
+                            <p class="stroke-text">Who am I?</p>
+                        </div>
+                        <p class="about-me-text">Hello! I'm Adam Pachulski, a front-end web developer with a love of
+                            coding and learning. Let's build functional, unique, and attractive websites together!</p>
                         <div>
 
                         </div>
@@ -74,8 +83,30 @@
         </section>
         <section class="portfolio" id="portfolio">
             <div class="portfolio-content wrapper">
-                <h2>My Web Work</h2>
+                <h2>My Game Work</h2>
                 <div class="portfolio-work-container">
+                    <div class="work-container-info">
+                        <h3>Fox Gang</h3>
+                        <a href="https://adarrfx.itch.io/fox-gang" class="portfolio-image-link" target="_blank">
+                            <img class="portfolio-work-container-image" src="/img/foxgang.png"
+                                alt="Fox Gang game title image"></a>
+                        <h4>Unity/C# Personal Project</h4>
+                        <a href=""><i class="fas fa-keyboard"> / <i class="fas fa-gamepad"></i></i> Play in Browser!</a>
+                    </div>
+                    <div class="work-container-text">
+                        <p>A small endless runner game where you avoid police foxes and try to add as many other foxes
+                            to your gang as you can! Created using Unity as a learning exercise in the engine.</p>
+                        <div class="work-container-viewgit">
+                            <a href="https://github.com/AdarrFX/foxgang" class="portfolio-github-code-link"
+                                target="_blank">
+                                <img class="github-icon" src="/img/icon/github-original-wordmark.svg" alt="Github Icon">
+                                <p>View code on Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h3>Other Projects</h3>
+                <!-- <div class="portfolio-work-container">
                     <div class="work-container-info">
                         <h3>Arora Jewelers</h3>
                         <a href="https://adarrfx.github.io/adamPachulskiProjectOne/" class="portfolio-image-link" target="_blank">
@@ -107,42 +138,49 @@
                                     <p>View code on Github</p></a>
                                 </div>
                         </div>
-                </div>
+                </div> -->
                 <div class="portfolio-work-container">
-                        <div class="work-container-info">
-                            <h3>Trivia Game!</h3>
-                            <a href="https://adam-and-andrew.github.io/adam-andrew-project-four/" class="portfolio-image-link" target="_blank">
-                            <img class="portfolio-work-container-image" src="/img/trivia.png" alt="Trivia Game Website"></a>
-                            <h4>Interactive jQuery Trivia Site</h4>
-                        </div>
+                    <div class="work-container-info">
+                        <h3>Trivia Game!</h3>
+                        <a href="https://adam-and-andrew.github.io/adam-andrew-project-four/"
+                            class="portfolio-image-link" target="_blank">
+                            <img class="portfolio-work-container-image" src="/img/trivia.png"
+                                alt="Trivia Game Website"></a>
+                        <h4>Interactive jQuery Trivia Site</h4>
+                    </div>
                     <div class="work-container-text">
-                        <p>A responsive trivia game created using jQuery and AJAX calls, asking an external API for trivia questions. Created using paired programming by Andrew Tham and I.</p>
+                        <p>A responsive trivia game created using jQuery and AJAX calls, asking an external API for
+                            trivia questions. Created using paired programming by Andrew Tham and I.</p>
                         <div class="work-container-viewgit">
-                                <a href="https://github.com/adam-and-andrew/adam-andrew-project-four" class="portfolio-github-code-link" target="_blank">
+                            <a href="https://github.com/adam-and-andrew/adam-andrew-project-four"
+                                class="portfolio-github-code-link" target="_blank">
                                 <img class="github-icon" src="/img/icon/github-original-wordmark.svg" alt="Github Icon">
                                 <p>View code on Github</p>
-                                </a>
-                            </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-work-container">
-                        <div class="work-container-info">
-                            <h3>Amiibo Search</h3>
-                            <a href="https://adarrfx.github.io/adam-pachulski-project-five/" class="portfolio-image-link" target="_blank">
+                    <div class="work-container-info">
+                        <h3>Amiibo Search</h3>
+                        <a href="https://adarrfx.github.io/adam-pachulski-project-five/" class="portfolio-image-link"
+                            target="_blank">
                             <img class="portfolio-work-container-image" src="/img/amiibo.png" alt=""></a>
-                            <h4>Nintendo Amiibo React Search Page</h4>
-                        </div>
+                        <h4>Nintendo Amiibo React Search Page</h4>
+                    </div>
                     <div class="work-container-text">
-                        <p>A search utility created with React to search the entire catalogue of Amiibo figures and cards.</p>
+                        <p>A search utility created with React to search the entire catalogue of Amiibo figures and
+                            cards.</p>
                         <div class="work-container-viewgit">
-                                <a href="https://github.com/AdarrFX/adam-pachulski-project-five" class="portfolio-github-code-link" target="_blank">
+                            <a href="https://github.com/AdarrFX/adam-pachulski-project-five"
+                                class="portfolio-github-code-link" target="_blank">
                                 <img class="github-icon" src="/img/icon/github-original-wordmark.svg" alt="Github Icon">
                                 <p>View code on Github</p>
-                                </a>
-                            </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-work-container">
+                <!-- <div class="portfolio-work-container">
                         <div class="work-container-info">
                             <h3>Average Joe</h3>
                             <a href="https://teamaveragejoe.github.io/average-joe/" class="portfolio-image-link" target="_blank">
@@ -158,75 +196,64 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <h2>My Game Work</h2>
-                <div class="portfolio-work-container">
-                    <div class="work-container-info">
-                        <h3>Fox Gang</h3>
-                        <a href="https://adarrfx.itch.io/fox-gang" class="portfolio-image-link" target="_blank">
-                        <img class="portfolio-work-container-image" src="/img/foxgang.png" alt="Fox Gang game title image"></a>
-                        <h4>Unity/C# Personal Project</h4>
-                    </div>
-                <div class="work-container-text">
-                    <p>A small endless runner game where you avoid police foxes and try to add as many other foxes to your gang as you can! Created using Unity as a learning exercise in the engine.</p>
-                    <div class="work-container-viewgit">
-                            <a href="https://github.com/AdarrFX/foxgang" class="portfolio-github-code-link" target="_blank">
-                        <img class="github-icon" src="/img/icon/github-original-wordmark.svg" alt="Github Icon">
-                        <p>View code on Github</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                </div> -->
+                
             </div>
         </section>
         <section class="skills" id="skills">
-                <div class="skills-text">
-                </div>
-                <h3>My skills include...</h3>
-                <div class="skills-content">
-                    <img class="skill-image" src="/img/icon/html5-original-wordmark.svg" alt="HTML5 Icon" title="HTML5">
-                    <img class="skill-image" src="/img/icon/css3-original-wordmark.svg" alt="CSS3 Icon" title="CSS3">
-                    <img class="skill-image" src="/img/icon/sass-original.svg" alt="SASS Icon" title="SCSS / SASS">
-                    <img class="skill-image" src="/img/icon/javascript-original.svg" alt="Javascript Icon" title="JavaScript">
-                    <img class="skill-image" src="/img/icon/jquery-original-wordmark.svg" alt="jQuery Icon" title="jQuery">
-                    <img class="skill-image" src="/img/icon/react-original-wordmark.svg" alt="React.js Icon" title="React.js">
-                    <img class="skill-image" src="/img/icon/csharp-original.svg" alt="C Sharp Icon" title="C Sharp">
-                    <img class="skill-image" src="/img/icon/git-original-wordmark.svg" alt="Git Icon" title="Git">
-                </div>
-            </section>
+            <div class="skills-text">
+            </div>
+            <h3>My skills include...</h3>
+            <div class="skills-content">
+                <img class="skill-image" src="/img/icon/html5-original-wordmark.svg" alt="HTML5 Icon" title="HTML5">
+                <img class="skill-image" src="/img/icon/css3-original-wordmark.svg" alt="CSS3 Icon" title="CSS3">
+                <img class="skill-image" src="/img/icon/sass-original.svg" alt="SASS Icon" title="SCSS / SASS">
+                <img class="skill-image" src="/img/icon/javascript-original.svg" alt="Javascript Icon"
+                    title="JavaScript">
+                <img class="skill-image" src="/img/icon/jquery-original-wordmark.svg" alt="jQuery Icon" title="jQuery">
+                <img class="skill-image" src="/img/icon/react-original-wordmark.svg" alt="React.js Icon"
+                    title="React.js">
+                <img class="skill-image" src="/img/icon/csharp-original.svg" alt="C Sharp Icon" title="C Sharp">
+                <img class="skill-image" src="/img/icon/git-original-wordmark.svg" alt="Git Icon" title="Git">
+            </div>
+        </section>
         <section class="experience" id="experience">
             <div class="experience-content wrapper">
 
                 <h2 class="experience-header-text">My Experience</h2>
 
                 <div class="experience-education-container">
-                        <div class="experience-work">
-                                <div class="slanted-header stroke-text">
-                                    <h3 class="experience-header-text">Recent Work</h3>
-                                </div>
-                                <ul class="experience-list">
-                                    <li class="experience-list-item">
-                                        <h4>Web Developer - Uberflip</h4>
-                                        <p>Used HTML, CSS, and JS to customize Uberflip platform to client designs under deadlines and solve frontend bugs for multiple clients.</p>
-                                    </li>
-                                    <li class="experience-list-item">
-                                        <h4>Web Developer - Lancaster House</h4>
-                                        <p>Created graphics, HTML/CSS code for promotional emails, and maintained web platform for Lancaster House customers</p>
-                                    </li>
-                                    <li class="experience-list-item">
-                                        <h4>Web Dev Bootcamp - HackerYou</h4>
-                                        <p>Used HTML5, CSS3, jQuery, React, and Git workflows to produce responsive, accessible websites </p>
-                                    </li>
-                                    <li class="experience-list-item">
-                                        <h4>Technical Writer - Sonovision Canada</h4>
-                                        <p>Engineering document preparation for Honeywell Canada</p>
-                                        </li>
-                                    <li class="experience-list-item">
-                                        <h4>Integrated Logistics Support - L-3 Technologies</h4>
-                                        <p>Airworthiness and reliability support for CP-140 Aurora aircraft and Chinook helicopters</p>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="experience-work">
+                        <div class="slanted-header stroke-text">
+                            <h3 class="experience-header-text">Recent Work</h3>
+                        </div>
+                        <ul class="experience-list">
+                            <li class="experience-list-item">
+                                <h4>Web Developer - Uberflip</h4>
+                                <p>Used HTML, CSS, and JS to customize Uberflip platform to client designs under
+                                    deadlines and solve frontend bugs for multiple clients.</p>
+                            </li>
+                            <li class="experience-list-item">
+                                <h4>Web Developer - Lancaster House</h4>
+                                <p>Created graphics, HTML/CSS code for promotional emails, and maintained web platform
+                                    for Lancaster House customers</p>
+                            </li>
+                            <li class="experience-list-item">
+                                <h4>Web Dev Bootcamp - HackerYou</h4>
+                                <p>Used HTML5, CSS3, jQuery, React, and Git workflows to produce responsive, accessible
+                                    websites </p>
+                            </li>
+                            <li class="experience-list-item">
+                                <h4>Technical Writer - Sonovision Canada</h4>
+                                <p>Engineering document preparation for Honeywell Canada</p>
+                            </li>
+                            <li class="experience-list-item">
+                                <h4>Integrated Logistics Support - L-3 Technologies</h4>
+                                <p>Airworthiness and reliability support for CP-140 Aurora aircraft and Chinook
+                                    helicopters</p>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="experience-education">
                         <div class="slanted-header stroke-text">
                             <h3 class="experience-header-text">Education</h3>
@@ -234,7 +261,9 @@
                         <ul>
                             <li>
                                 <h4 class="unity-education-heading">Unity</h4>
-                                <p>Create with Code (<a target="_blank" href="https://learn.unity.com/course/create-with-code">online course</a>) (2022)</p>
+                                <p>Create with Code (<a target="_blank"
+                                        href="https://learn.unity.com/course/create-with-code">online course</a>) (2022)
+                                </p>
                                 <sub></sub>
                             </li>
                             <li>
@@ -251,25 +280,33 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
         <section class="contact" id="contact">
             <div class="contact-content">
-                    <h2>Contact Me</h2>
+                <h2>Contact Me</h2>
                 <p>I can be reached at:</p>
-                <h4><a href="mailto:adampachulskicodes@gmail.com" class="email-link"> adampachulskicodes@gmail.com</a></h4>
-                <h4><a href="mailto:adampachulskicodes@gmail.com" class="email-link-mobile email-link"> adampachulskicodes @gmail.com</a></h4>
+                <h4><a href="mailto:adampachulskicodes@gmail.com" class="email-link"> adampachulskicodes@gmail.com</a>
+                </h4>
+                <h4><a href="mailto:adampachulskicodes@gmail.com" class="email-link-mobile email-link">
+                        adampachulskicodes @gmail.com</a></h4>
                 <p>You can also find me on:</p>
-                    <div class="contact-icons-container">
-                        <ul class="contact-icons-list">
-                            <li><a href="https://github.com/AdarrFX" target="_blank"><i class="fab fa-github-square" aria-label="Go to my Github" title="Go to my Github"></i></a></li>
-                            <li><a href="http://www.linkedin.com/in/adam-pachulski" target="_blank"><i class="fab fa-linkedin" aria-label="Go to My LinkedIn" title="Go to my LinkedIn"></i></a></li>
-                            <li><a href="http://www.twitter.com/AdamPachulski" target="_blank"><i class="fab fa-twitter-square" aria-label="Go to my Twitter" title="Go to my Twitter"></i></a></li>
-                            <li><a href="https://medium.com/@adampachulskicodes" target="_blank"><i class="fab fa-medium" aria-label="Got to my Blog on Medium" title="Go to my Blog on Medium"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="contact-icons-container">
+                    <ul class="contact-icons-list">
+                        <li><a href="https://github.com/AdarrFX" target="_blank"><i class="fab fa-github-square"
+                                    aria-label="Go to my Github" title="Go to my Github"></i></a></li>
+                        <li><a href="http://www.linkedin.com/in/adam-pachulski" target="_blank"><i
+                                    class="fab fa-linkedin" aria-label="Go to My LinkedIn"
+                                    title="Go to my LinkedIn"></i></a></li>
+                        <li><a href="http://www.twitter.com/AdamPachulski" target="_blank"><i
+                                    class="fab fa-twitter-square" aria-label="Go to my Twitter"
+                                    title="Go to my Twitter"></i></a></li>
+                        <li><a href="https://medium.com/@adampachulskicodes" target="_blank"><i class="fab fa-medium"
+                                    aria-label="Got to my Blog on Medium" title="Go to my Blog on Medium"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
