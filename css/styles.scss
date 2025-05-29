@@ -414,6 +414,11 @@ nav {
     transition: 0.3s;
 }
 
+.game-title {
+    text-decoration: none;
+    color:#000
+}
+
 //SKILLS SECTION
 
 .skills {
@@ -429,9 +434,27 @@ nav {
     padding: 30px 0 30px 0;
 }
 
+.inverse-colour {
+    background: linear-gradient(to top, $base-colour 0%, $darker-base 100%);
+}
+
 .skills img {
   width: 120px;
   filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.808));
+}
+
+.skills-content.inverse-colour {
+    img {
+        width: 50px;
+    }
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.skills-content h4 {
+    color: white;
+    margin: 0;
+    padding: 20px 0 20px 0;
 }
 
 //EXPERIENCE SECTION
