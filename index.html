@@ -20,7 +20,9 @@
 
     <main>
         <header>
-            <img class="globe-image-bg" src="/img/Globe.svg" alt="">
+            <div>
+                <img class="globe-image-bg" src="/img/Globe.svg" alt="">
+            </div>
             <div class="name-container">
                 <p>Hello, I'm</p>
                 <h1>Adam Pachulski</h1>
@@ -72,8 +74,9 @@
                         <div class=about-me-header>
                             <p class="stroke-text">Who am I?</p>
                         </div>
-                        <p class="about-me-text">Hello! I'm Adam Pachulski, a front-end web developer with a love of
-                            coding and learning. Let's build functional, unique, and attractive websites together!</p>
+                        <p class="about-me-text">Hello! I'm Adam Pachulski, a video game developer with a love of
+                            game programming, engineering, and visual creativity. With my experience from engineering and art, I love incorporating
+                            my programming work with visual creativity to make really fun and unique games. </p>
                         <div>
 
                         </div>
@@ -87,8 +90,8 @@
 
                 <div class="portfolio-work-container">
                     <div class="work-container-info">
-                        <a class="game-title" href=""><h3>Prime Movers</h3></a>
-                        <a href="" class="portfolio-image-link" target="_blank">
+                        <a class="game-title" href="https://adarrfx.itch.io/prime-movers"><h3>Prime Movers</h3></a>
+                        <a href="https://adarrfx.itch.io/prime-movers" class="portfolio-image-link" target="_blank">
                             <img class="portfolio-work-container-image" src="/img/primemovers.png"
                                 alt="Prime Movers game title image"></a>
                         <h4>Unity/C# Game</h4>
@@ -186,6 +189,28 @@
                                 </div>
                         </div>
                 </div> -->
+
+                <div class="portfolio-work-container">
+                    <div class="work-container-info">
+                        <h3>Find the Crystal!</h3>
+                        <a href="/games/textadventure/index.html"
+                            class="portfolio-image-link" target="_blank">
+                            <img class="portfolio-work-container-image" src="/img/textadventure.png"
+                                alt="Trivia Game Website"></a>
+                        <h4>Browser-Based Text Adventure</h4>
+                    </div>
+                    <div class="work-container-text">
+                        <p>A short text adventure created purely in HTML, CSS, and Javascript. Uses a basic text parser to input commands.</p>
+                        <div class="work-container-viewgit">
+                            <a href="https://github.com/AdarrFX/text-adventure"
+                                class="portfolio-github-code-link" target="_blank">
+                                <img class="github-icon" src="/img/icon/github-original-wordmark.svg" alt="Github Icon">
+                                <p>View code on Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="portfolio-work-container">
                     <div class="work-container-info">
                         <h3>Trivia Game!</h3>
@@ -227,6 +252,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="portfolio-work-container">
+                    <div class="work-container-info">
+                        <h3>Connecting a 286 DOS PC to the Internet</h3>
+                        <a href="https://medium.com/@adampachulskicodes/connecting-a-286-dos-pc-to-the-internet-through-a-serial-connection-in-2019-b93a422ff094" class="portfolio-image-link"
+                            target="_blank">
+                            <img class="portfolio-work-container-image" src="/img/medium.png" alt=""></a>
+                        <h4>Medium Article - Guide</h4>
+                    </div>
+                    <div class="work-container-text">
+                        <p>An article I wrote documenting the process of connecting a Compaq Portable III to the internet to play telnet games and text-browse the internet.</p>
+                    </div>
+                </div>
+                
                 <!-- <div class="portfolio-work-container">
                         <div class="work-container-info">
                             <h3>Average Joe</h3>
@@ -250,7 +289,7 @@
         <section class="skills" id="skills">
             <div class="skills-text">
             </div>
-            <h3>My skills include...</h3>
+            <h3>My game development skills include...</h3>
             <div class="skills-content">
                 <img class="skill-image" src="/img/icon/unity-original-wordmark.svg" alt="Unity Game Engine Icon" title="Unity">
                 <img class="skill-image" src="/img/icon/csharp-original.svg" alt="C Sharp Icon" title="C Sharp">
@@ -276,9 +315,18 @@
                 <div class="experience-education-container">
                     <div class="experience-work">
                         <div class="slanted-header stroke-text">
-                            <h3 class="experience-header-text">Recent Work</h3>
+                            <h3 class="experience-header-text">Professional Work</h3>
                         </div>
                         <ul class="experience-list">
+                            <li class="experience-list-item">
+                                <a href="http://www.linkedin.com/in/adam-pachulski" target="_blank"><h4>See my LinkedIn for detailed work history!</h4></a>
+                            </li>
+                            <li class="experience-list-item">
+                                <h4>Quality Assurance and Frontline Support - Shoelace Learning</h4>
+                                <p>Performed functional testing for new and existing features on Shoelace Learning online games and web platform while gathering
+                                    customer feedback, while providing input on product content, including gameplay.
+                                </p>
+                            </li>
                             <li class="experience-list-item">
                                 <h4>Web Developer - Uberflip</h4>
                                 <p>Used HTML, CSS, and JS to customize Uberflip platform to client designs under
@@ -288,11 +336,6 @@
                                 <h4>Web Developer - Lancaster House</h4>
                                 <p>Created graphics, HTML/CSS code for promotional emails, and maintained web platform
                                     for Lancaster House customers</p>
-                            </li>
-                            <li class="experience-list-item">
-                                <h4>Web Dev Bootcamp - HackerYou</h4>
-                                <p>Used HTML5, CSS3, jQuery, React, and Git workflows to produce responsive, accessible
-                                    websites </p>
                             </li>
                             <li class="experience-list-item">
                                 <h4>Technical Writer - Sonovision Canada</h4>
@@ -310,6 +353,11 @@
                             <h3 class="experience-header-text">Education</h3>
                         </div>
                         <ul>
+                            <li>
+                                <h4 class="algonquin-education-heading">Algonquin College</h4>
+                                <p>Computer Programming (2-year program) (2025)</p>
+                                <sub></sub>
+                            </li>
                             <li>
                                 <h4 class="unity-education-heading">Unity</h4>
                                 <p>Create with Code (<a target="_blank"
@@ -362,7 +410,7 @@
         </section>
     </main>
     <footer>
-        <p>Copyright Adam Pachulski 2023.</p>
+        <p>© Copyright Adam Pachulski 2025.</p>
     </footer>
 
 </body>

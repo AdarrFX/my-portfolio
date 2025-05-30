@@ -239,6 +239,33 @@ header:after {
   animation-timing-function: linear;
 }
 
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+.spacestation {
+  position: absolute;
+  translate: var(--x) var(--y);
+  z-index: 1;
+  animation-name: station-orbit;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  --amplitude: 150px;
+  --x: calc(cos(var(--angle)) * var(--amplitude));
+  --y: calc(sin(var(--angle)) * var(--amplitude));
+  translate: var(--x) var(--y);
+}
+
+@keyframes station-orbit {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
 @keyframes globe-rotation {
   0% {
     transform: rotate(0deg);
@@ -631,6 +658,13 @@ nav {
   align-items: center;
 }
 
+.experience-list li:first-child {
+  margin-bottom: 25px;
+}
+.experience-list li:first-child a {
+  text-decoration: none;
+}
+
 .experience-education-container {
   margin: 0 auto;
   display: flex;
@@ -656,12 +690,24 @@ nav {
   padding: 10px;
 }
 
+.algonquin-education-heading {
+  background-image: url("/img/icon/algonquincollege_logo.jpeg");
+}
+
+.sheridan-education-heading {
+  background-image: url("/img/icon/sheridan_logo.jpeg");
+}
+
 .hackeryou-education-heading {
   background-image: url("/img/icon/hy.svg");
 }
 
 .carleton-education-heading {
   background-image: url("/img/icon/carleton.svg");
+}
+
+.unity-education-heading {
+  background-image: url("/img/icon/unity-original-wordmark.svg");
 }
 
 .experience-content p {
@@ -681,7 +727,7 @@ nav {
 .slanted-header {
   text-align: center;
   padding: 5px;
-  width: 220px;
+  width: 280px;
   background: rgb(0, 113, 235);
   height: 60px;
   line-height: 45px;
